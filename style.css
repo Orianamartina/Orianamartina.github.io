@@ -68,7 +68,7 @@ body{
     top: 43%;
 }
 .bottom{
-    margin-top: 25px;
+    margin-top: 22px;
     margin: 25px;
     transform: translateY(25px);
     font-family: var(--font1);
@@ -78,7 +78,7 @@ body{
 .title{
     font-weight: 600;
     font-size: 22px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 
 }
 .title:hover{
@@ -94,7 +94,7 @@ body{
 
 }
 .priceandtime{
-    margin-top: 25px;
+    margin-top: 22px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,6 +114,7 @@ body{
 
 .price{
     color: var(--Cyan);
+    font-weight: 700;
     
 }
 .ethimage{
