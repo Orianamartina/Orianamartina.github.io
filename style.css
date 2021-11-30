@@ -1,0 +1,175 @@
+:root{
+    /* Primary colors */
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /*Neutral Colors*/
+    --DarkBlueMainBg: hsl(217, 54%, 11%);
+    --DarkBlueCardBg: hsl(216, 50%, 16%);
+    --DarkBlueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    /*Typography*/
+
+    /* Font size (paragraph): 18px*/
+
+    /* Font */
+
+    --font1:'Outfit', sans-serif;
+    /*- Weights: 300, 400, 600
+    The designs were created to the following widths:
+
+    - Mobile: 375px
+    - Desktop: 1440px */
+
+}
+body{
+    background-color: var(--DarkBlueMainBg);
+    
+}
+.Card{
+    position: relative;
+    Height: 600px;
+    width: 350px;
+    background-color: var(--DarkBlueCardBg);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border-radius: 6%/4%;
+    
+}
+.image{
+    
+    width: 302px;
+    height: 302px;
+    background-image: url(image-equilibrium.jpg);
+    background-size: cover;
+    border-radius:6%/4% ;
+    margin: 25px;
+    transform: translateY(25px);
+    
+}
+
+.image:hover::before{
+    content: " ";
+    width:302px;
+    height: 302px;
+    background-color: var(--Cyan);
+    border-radius:6%/4%;
+    filter: opacity(50%);
+    position: absolute;   
+
+}
+.image:hover::after{
+    content: url(icon-view.svg);
+    position: absolute;
+    left: 43%;
+    top: 43%;
+}
+.bottom{
+    margin-top: 25px;
+    margin: 25px;
+    transform: translateY(25px);
+    font-family: var(--font1);
+    color: var(--White);
+}
+
+.title{
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 25px;
+
+}
+.title:hover{
+    color:var(--Cyan);
+    cursor: pointer;
+    
+}
+.description{
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--SoftBlue);
+
+
+}
+.priceandtime{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.timeimage{
+    display: inline;
+    margin-right: 2px;
+    
+    
+   
+    
+}
+.time{
+    color: var(--SoftBlue); 
+    
+}
+
+.price{
+    color: var(--Cyan);
+    
+}
+.ethimage{
+    display: inline;
+    margin-right: 2px;
+    
+}
+
+.line{
+    margin-top: 25px;
+    height: 2px;
+    width: 300px;
+    background-color: var(--DarkBlueLine);
+}
+.creator{
+    display: flex;
+    text-align: center;
+   
+}
+.creatorname{
+    color:white;
+}
+.creatorname:hover{
+    color:var(--Cyan);
+    cursor: pointer;
+}
+.creation{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.creatorpic{
+    height: 35px;
+    width: 35px;
+    background-image: url(image-avatar.png);
+    background-size: cover;
+    margin-top: 16px;
+    
+
+}
+
+@media (max-width: 376px) {
+    
+    .Card{
+        max-width: 320px;
+    }
+    .image{
+        width: 275px;
+    } 
+    .line{
+        width: 280px;
+    }  
+}
+    
+
+
+
